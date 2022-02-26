@@ -23,7 +23,7 @@ public class base {
      	File appDir = new File("src/test/java/appium");
        	File app = new File(appDir, "ApiDemos-debug.apk");
 
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Alaemulator");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Emulator");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");//new step
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
         cap.setCapability("newCommandTimeout", "3600");
