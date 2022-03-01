@@ -21,12 +21,13 @@ public class base {
 
 		DesiredCapabilities cap= new DesiredCapabilities();
      	File appDir = new File("src/test/java/appium");
-       	File app = new File(appDir, "ApiDemos-debug.apk");
+       	File app = new File(appDir, "General-Store.apk");
 
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Emulator");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");//new step
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
-        cap.setCapability("newCommandTimeout", "3600");
+       // cap.setCapability("newCommandTimeout", "3600");
+		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 15);
 		
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
         return driver;
