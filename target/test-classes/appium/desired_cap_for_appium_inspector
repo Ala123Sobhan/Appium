@@ -1,0 +1,8 @@
+{
+  "platformName": "iOS",
+  "platformVersion": "15.2",
+  "deviceName": "iPhone 12",
+  "automationName": "XCUITest",
+  "app": "/Users/ala/Library/Developer/Xcode/DerivedData/UIKitCatalog-aovzzgapfuqnizhctywmljndnhlx/Build/Products/Debug-iphonesimulator/UIKitCatalog.app",
+  "norest": "true"
+}
