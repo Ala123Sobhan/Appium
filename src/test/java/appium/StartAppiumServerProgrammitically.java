@@ -63,6 +63,8 @@ public class StartAppiumServerProgrammitically {
 	@AfterTest
 	public void killAllNodes2() throws IOException {
 		
+		Runtime.getRuntime().exec("adb -s emulator-5554 emu kill");
+		//driver.quit();
 		Runtime.getRuntime().exec("taskkill  /F  /IM node.exe");
 		
 	}
@@ -120,6 +122,9 @@ public class StartAppiumServerProgrammitically {
 		//Thread.sleep(10000);
 		
 		s.stop();
+
+		Thread.sleep(8000);
+		
 	}
 	
 }
